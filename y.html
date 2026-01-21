@@ -1,0 +1,598 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Agnihotri | Full-Stack Developer & AI Enthusiast</title>
+    <meta name="description" content="Portfolio of Ayush Agnihotri - Full-Stack Developer, AI Enthusiast, and Tech Explorer from Kanpur, India">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading Experience...</div>
+            <div class="loader-progress">
+                <div class="loader-progress-bar" id="loading-progress"></div>
+            </div>
+            <div class="loader-percentage" id="loading-percentage">0%</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-logo">
+            <span class="logo-text">AA</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" data-section="0"><i class="fas fa-home"></i> <span>Home</span></a></li>
+            <li><a href="#about" data-section="1"><i class="fas fa-user"></i> <span>About</span></a></li>
+            <li><a href="#education" data-section="2"><i class="fas fa-graduation-cap"></i> <span>Education</span></a></li>
+            <li><a href="#experience" data-section="3"><i class="fas fa-briefcase"></i> <span>Experience</span></a></li>
+            <li><a href="#skills" data-section="4"><i class="fas fa-code"></i> <span>Skills</span></a></li>
+            <li><a href="#projects" data-section="5"><i class="fas fa-rocket"></i> <span>Projects</span></a></li>
+            <li><a href="#achievements" data-section="6"><i class="fas fa-trophy"></i> <span>Achievements</span></a></li>
+            <li><a href="#contact" data-section="7"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+        <div class="nav-social">
+            <a href="https://github.com/TheHUNTER2714" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ayush-agnihotri-448254298/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Progress Indicator -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- 3D Canvas -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- Content Overlay -->
+    <div id="content-overlay">
+        
+        <!-- Section 0: Hero/Landing -->
+        <section class="content-section hero-section" id="section-0">
+            <div class="hero-content">
+                <h1 class="hero-title animate-text">
+                    <span class="name-highlight">Ayush Agnihotri</span>
+                </h1>
+                <div class="hero-subtitle animate-text delay-1">
+                    <span class="role-tag">Full-Stack Developer</span>
+                    <span class="separator">|</span>
+                    <span class="role-tag">AI Enthusiast</span>
+                    <span class="separator">|</span>
+                    <span class="role-tag">Tech Explorer</span>
+                </div>
+                <div class="hero-location animate-text delay-2">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Kanpur, India</span>
+                </div>
+                <div class="hero-cta animate-text delay-3">
+                    <a href="#about" class="cta-button">
+                        <span>Explore My Journey</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <p>Scroll to navigate</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: About -->
+        <section class="content-section about-section" id="section-1">
+            <div class="section-container">
+                <h2 class="section-title" data-text="About Me">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3>Personal Info</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <span class="info-label">Name:</span>
+                                <span class="info-value">Ayush Agnihotri</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Date of Birth:</span>
+                                <span class="info-value">27/11/2005</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Location:</span>
+                                <span class="info-value">Kanpur, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Contact Info</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <span class="info-label">Email:</span>
+                                <span class="info-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="35544c40465d54525b5c5d5a41475c040300755258545c591b565a58">[email&#160;protected]</a></span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Phone:</span>
+                                <span class="info-value">8429090075</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>Languages</h3>
+                        <div class="info-list">
+                            <div class="info-item">
+                                <span class="info-label">Hindi:</span>
+                                <span class="info-value">Fluent (Spoken)</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">English:</span>
+                                <span class="info-value">Advanced (Written)</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">English:</span>
+                                <span class="info-value">Intermediate (Spoken)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Hobbies & Interests</h3>
+                        <div class="hobbies-tags">
+                            <span class="hobby-tag"><i class="fas fa-code"></i> Coding</span>
+                            <span class="hobby-tag"><i class="fas fa-laptop-code"></i> Web Development</span>
+                            <span class="hobby-tag"><i class="fas fa-gamepad"></i> Gaming</span>
+                            <span class="hobby-tag"><i class="fas fa-book"></i> Learning Tech</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Education -->
+        <section class="content-section education-section" id="section-2">
+            <div class="section-container">
+                <h2 class="section-title" data-text="Education">Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023 - 2027</div>
+                            <h3>B.Tech - Computer Science & Engineering</h3>
+                            <p class="institution">Rajkiya Engineering College Pratapgarh</p>
+                            <div class="timeline-badge">Pursuing</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2021 - 2023</div>
+                            <h3>Senior Secondary (XII), CBSE</h3>
+                            <p class="institution">Sardar Patel Academy Public School</p>
+                            <div class="timeline-badge">Completed</div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2021</div>
+                            <h3>Secondary (X), CBSE</h3>
+                            <p class="institution">Virendra Swaroop Education Centre</p>
+                            <div class="timeline-badge">Completed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Experience -->
+        <section class="content-section experience-section" id="section-3">
+            <div class="section-container">
+                <h2 class="section-title" data-text="Experience">The Skill Zone</h2>
+                <div class="experience-grid">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="company-logo">
+                                <i class="fab fa-google"></i>
+                            </div>
+                            <div class="experience-title">
+                                <h3>Google Arcade Facilitator</h3>
+                                <p class="experience-date">April 2023 - Present</p>
+                            </div>
+                        </div>
+                        <p class="experience-description">
+                            Helping students learn coding and development skills through interactive workshops and mentoring sessions.
+                        </p>
+                        <div class="experience-badge active">Active</div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="company-logo">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="experience-title">
+                                <h3>JP Morgan - Virtual Internship</h3>
+                                <p class="experience-date">Nov 2024 - Dec 2024</p>
+                            </div>
+                        </div>
+                        <p class="experience-description">
+                            Worked on financial technology-related tasks, gaining insights into banking systems and fintech solutions.
+                        </p>
+                        <div class="experience-badge">Completed</div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="company-logo">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="experience-title">
+                                <h3>Tata Group - Virtual Internship</h3>
+                                <p class="experience-date">Oct 2024</p>
+                            </div>
+                        </div>
+                        <p class="experience-description">
+                            Focused on data analysis and insights, working with real-world datasets to drive business decisions.
+                        </p>
+                        <div class="experience-badge">Completed</div>
+                    </div>
+                </div>
+                <div class="professional-skills">
+                    <h3>Professional Skills</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="fas fa-network-wired"></i> Computer Networking</span>
+                        <span class="skill-tag"><i class="fas fa-project-diagram"></i> Microsoft Project</span>
+                        <span class="skill-tag"><i class="fas fa-comments"></i> Effective Communication</span>
+                        <span class="skill-tag"><i class="fas fa-brain"></i> AI Expertise</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Technical Skills -->
+        <section class="content-section skills-section" id="section-4">
+            <div class="section-container">
+                <h2 class="section-title" data-text="Technical Skills">Technical Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fab fa-python"></i> Python</span>
+                            <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fab fa-html5"></i> HTML / CSS</span>
+                            <span class="skill-percentage">92%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="92"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fab fa-js"></i> JavaScript</span>
+                            <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fas fa-code"></i> C Programming</span>
+                            <span class="skill-percentage">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="skill-percentage">78%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="78"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Projects -->
+        <section class="content-section projects-section" id="section-5">
+            <div class="section-container">
+                <h2 class="section-title" data-text="Projects">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Resume Builder</h3>
+                        <p class="project-description">Interactive resume builder with real-time preview and PDF export functionality.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                        <a href="https://thehunter2714.github.io/resume/" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <span>View Project</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Student Database Management</h3>
+                        <p class="project-description">Comprehensive student management system with CRUD operations and intuitive UI.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">Database</span>
+                            <span class="tech-badge">UI/UX</span>
+                        </div>
+                        <a href="https://thehunter2714.github.io/STDM/" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <span>View Project</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>StudyCare - Emotional Chatbot AI</h3>
+                        <p class="project-description">AI-powered chatbot designed to provide emotional support and study assistance.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">AI</span>
+                            <span class="tech-badge">NLP</span>
+                        </div>
+                        <a href="https://studycarechatbot.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <span>View Project</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Space Invader Game</h3>
+                        <p class="project-description">Classic arcade-style game built with HTML5 Canvas and modern JavaScript.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">HTML5 Canvas</span>
+                            <span class="tech-badge">Game Dev</span>
+                        </div>
+                        <a href="https://thehunter2714.github.io/space_invaders_arcade/" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <span>View Project</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>ChatCord - Real-time Chat App</h3>
+                        <p class="project-description">Real-time messaging application with Socket.IO for instant communication.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">Socket.IO</span>
+                            <span class="tech-badge">Express</span>
+                        </div>
+                        <a href="https://chatcord-9slp.onrender.com" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <span>View Project</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Resume Skill Extractor</h3>
+                        <p class="project-description">ML-powered tool to extract and analyze skills from resumes automatically.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Machine Learning</span>
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge">Python</span>
+                        </div>
+                        <a href="https://rajeshth.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <span>View Project</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Achievements & Certifications -->
+        <section class="content-section achievements-section" id="section-6">
+            <div class="section-container">
+                <h2 class="section-title" data-text="Achievements">Achievements & Certifications</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card featured">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>🥇 1st Position</h3>
+                        <p>AKTU AI Tech Guvi HCL Hackathon</p>
+                        <div class="achievement-badge">Hackathon Winner</div>
+                    </div>
+                    <div class="github-achievements">
+                        <h3><i class="fab fa-github"></i> GitHub Achievements</h3>
+                        <div class="github-badges">
+                            <span class="github-badge"><i class="fas fa-users"></i> Pair Extraordinaire</span>
+                            <span class="github-badge"><i class="fas fa-fish"></i> Pull Shark</span>
+                            <span class="github-badge"><i class="fas fa-star"></i> YOLO</span>
+                            <span class="github-badge"><i class="fas fa-bolt"></i> Quickdraw</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="certifications">
+                    <h3>Professional Certifications</h3>
+                    <div class="cert-grid">
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h4>Python Essential 3</h4>
+                            <p>Cisco Networking Academy</p>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h4>AI Programming</h4>
+                            <p>IBM</p>
+                        </div>
+                        <div class="cert-card">
+                            <div class="cert-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Cyber Security Fundamentals</h4>
+                            <p>IBM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Contact -->
+        <section class="content-section contact-section" id="section-7">
+            <div class="section-container">
+                <h2 class="section-title" data-text="Get In Touch">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="/cdn-cgi/l/email-protection#5c3d25292f343d3b32353433282e356d6a691c3b313d3530723f3331"><span class="__cf_email__" data-cfemail="2e4f575b5d464f49404746415a5c471f181b6e49434f4742004d4143">[email&#160;protected]</span></a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:8429090075">8429090075</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Kanpur, India</span>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/TheHUNTER2714" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ayush-agnihotri-448254298/" target="_blank" rel="noopener noreferrer" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                    <form action="https://formspree.io/f/xzddypyl" method="POST" class="space-y-4">
+
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                            ></textarea>
+                        </div>
+
+                        <!-- Anti-spam honeypot -->
+                        <input type="text" name="_gotcha" style="display:none">
+
+                        <button
+                            type="submit"
+                            class="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300"
+                        >
+                            Send Message
+                        </button>
+                    </form>
+                        <div id="form-status"></div>
+                    </div>
+                </div>
+                <div class="thank-you">
+                    <h3>Thank You for Visiting! 🚀</h3>
+                    <p>Let's build something amazing together.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Three.js -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+<script src="https://www.genspark.ai/sandbox_inspect.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9c16dfb51db9ae8f","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.9.1","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+</body>
+</html>
